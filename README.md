@@ -454,7 +454,7 @@ These trends indicate that the model effectively learned from the training data 
 
 The learning rate was adjusted dynamically during training using the CosineAnnealingLR scheduler. This scheduler gradually reduced the learning rate following a cosine decay schedule over the course of training, starting from the initial learning rate and annealing it toward a minimum value of `1e-6` over `T_max = n_epochs`. Notably, as the learning rate decreased smoothly through the cosine curve, improvements in validation accuracy (`valid_acc`) were observed in the later stages of training, indicating that the model benefited from more conservative and stable parameter updates as training progressed.
 
-![image.png](attachment:87783403-6dde-4f4f-af17-eeb10ab5f103:image.png)
+![image.png](./test_score.png)
 
 Consequently, a public score of 0.87129 was achieved on the Kaggle leaderboard.
 

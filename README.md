@@ -1,6 +1,6 @@
 # **Lab Assignment 2 - Food Image Classification with CNNs**
 
-2021312660 Jinwoong Jung(Department of Applied Artificial Intelligence, SKKU)
+Jinwoong Jung(Department of Applied Artificial Intelligence, SKKU)
 
 ## Abstract
 

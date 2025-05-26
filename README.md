@@ -4,7 +4,7 @@
 
 ## Abstract
 
-This report presents the solution to the Lab Assignment 2 of the course ‘Introduction to Deep Learning(AAI_3010_01)’, which aims to classify real-world food images into 11 distinct categories using Convolutional Neural Networks (CNNs). To improve model generalization and robustness, a variety of techniques were applied, including advanced data augmentation, Label Smoothing, Focal Loss, Sharpness-Aware Minimization (SAM), and Cosine Annealing Learning Rate Scheduler. The model was implemented using a ResNet34 architecture, without pre-trained weights. Through extensive experimentation and hyperparameter tuning, the final model achieved a test accuracy of 0.8537, demonstrating its effectiveness on the given classification task.
+This report presents the solution to the Lab Assignment 2 of the course ‘Introduction to Deep Learning(AAI_3010_01)’, which aims to classify real-world food images into 11 distinct categories using Convolutional Neural Networks (CNNs). To improve model generalization and robustness, a variety of techniques were applied, including advanced data augmentation, Label Smoothing, Focal Loss, Sharpness-Aware Minimization (SAM), and Cosine Annealing Learning Rate Scheduler. The model was implemented using a ResNet34 architecture, without pre-trained weights. Through extensive experimentation and hyperparameter tuning, the final model achieved a test accuracy of 0.87129, demonstrating its effectiveness on the given classification task.
 
 ## 1. Overview
 
@@ -36,14 +36,6 @@ The dataset consists of a total of **13,296 real-world food images**, each belon
     - Contains **2,660** images.
     - Filenames follow the format `"y.png"` without any label information.
     - The goal is to predict the class label for each image.
-
-![train/0_00696.jpg](attachment:b58f8deb-faf0-4227-b859-068dd1bb8d88:0_00696.jpg)
-
-train/0_00696.jpg
-
-![validation/9_08671.jpg](attachment:7ff9f956-eaa1-45d7-993b-97675df663ec:9_08671.jpg)
-
-validation/9_08671.jpg
 
 ## 3. Method
 

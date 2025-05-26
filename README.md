@@ -436,21 +436,21 @@ After all TTA passes are completed, the collected logits are concatenated and av
 
 The training and validation performance over epochs is visualized using **Weights & Biases (wandb)**.
 
-![image.png](attachment:616e5343-58ee-4048-a41f-517f15a5fe20:image.png)
+![image.png](./train_acc.png)
 
-![image.png](attachment:6c4f23c8-895b-4c06-871a-d5c3ef214528:image.png)
+![image.png](./valid_acc.png)
 
 As shown in the above figures, both **training accuracy** and **validation accuracy** steadily increased, reaching 91.431**%** and 86.272**%** respectively at the final epoch.
 
-![image.png](attachment:0e3283a2-8372-4c58-b603-fe498e3a4377:image.png)
+![image.png](./train_loss.png)
 
-![image.png](attachment:11a6a708-6c2f-467f-81ed-878ef377b83a:image.png)
+![image.png](./valid_loss.png)
 
 Similarly, **training loss** and **validation loss** consistently decreased, achieving 0.40522 and 0.43634 at their lowest points.
 
 These trends indicate that the model effectively learned from the training data while maintaining good generalization on the validation set.
 
-![image.png](attachment:0b72f0d2-b2ba-4942-9b11-431abaa670a3:image.png)
+![image.png](./lr.png)
 
 The learning rate was adjusted dynamically during training using the CosineAnnealingLR scheduler. This scheduler gradually reduced the learning rate following a cosine decay schedule over the course of training, starting from the initial learning rate and annealing it toward a minimum value of `1e-6` over `T_max = n_epochs`. Notably, as the learning rate decreased smoothly through the cosine curve, improvements in validation accuracy (`valid_acc`) were observed in the later stages of training, indicating that the model benefited from more conservative and stable parameter updates as training progressed.
 
